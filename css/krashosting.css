@@ -1,0 +1,53 @@
+body {
+    margin: 0px;
+}
+.bannerfoto{
+    width:100%;
+    margin-bottom:-20px;
+}
+.navigatiebalk {
+    width: 100%;
+    background-color: lightgrey;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.menu {
+    list-style-type: none;
+    color: white;
+    font-family: Arial;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+@media screen and (max-width: 480px){
+    .navigatiebalk {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        height:180px;
+    }
+}
+.berichten {
+    display: flex;
+    justify-content: center;
+}
+.bericht {
+    border: 2px solid black;
+    width: 200px;
+    float: left;
+    width: 30%;
+    padding: 8px;
+    text-align: center;
+}
+.pakket {
+    border: 2px solid black;
+    width: 200px;
+    float: left;
+    width: 30%;
+    padding: 8px;
+    text-align: center;
+}
+.pakketten {
+    display: flex;
+    justify-content: center;
+}

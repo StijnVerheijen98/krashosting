@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
     <title>Over ons</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <script src="bootstrap.min.js"></script>
-    <link rel="stylesheet" href="krashosting.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/krashosting.css">
 </head>
     <body>
         <header>
-            <img class="bannerfoto" src="Images/banner+logo.jpg">
+            <img class="bannerfoto" src="../images/banner+logo.jpg">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -17,19 +17,19 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php">Home</a>
+                            <a class="nav-link" href="../index.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="krashosting_pakketten.html">Pakketten</a>
+                            <a class="nav-link" href="krashosting_pakketten.php">Pakketten</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="krashosting_overons.html">Over ons</a>
+                            <a class="nav-link" href="krashosting_overons.php">Over ons</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="krashosting_nieuws.html">Nieuws</a>
+                            <a class="nav-link" href="krashosting_nieuws.php">Nieuws</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="krashosting_contact.html">Contact</a>
+                            <a class="nav-link" href="krashosting_contact.php">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -37,7 +37,7 @@
         </header>
         <h1 class="overkop">Over Krashosting</h1>
         <section class="overons">
-            <img class="fotomartijn" src="images/martijn.jpg">
+            <img class="fotomartijn" src="../images/martijn.jpg">
             <p class="overtekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra tortor id volutpat tempus. Cras tincidunt, mi quis euismod bibendum, dolor eros lobortis risus,
             a convallis libero orci vel ante. Etiam accumsan facilisis risus, eu pretium odio. Mauris dapibus ante odio, non vulputate sapien gravida sit amet.
             Vivamus sit amet leo tellus. Curabitur convallis urna et varius pulvinar. Curabitur sed lectus et velit euismod commodo ac sed quam.

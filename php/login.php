@@ -13,6 +13,7 @@ class login
 {
     private $config;
     private $loggedin;
+    private $userinfo;
 
 
     public function __construct($username, $password, $table = "customer")
@@ -44,7 +45,25 @@ class login
                     {
                         $this->loggedin = true;
                         $_SESSION["loggedin"] = $this->loggedin;
-                        //Locaties moeten nog gemaakt worden
+
+                        // Gebruiker informatie opzoeken
+                        $stmt = $mysqli->prepare("SELECT vnaam, anaam, email FROM employees WHERE Email=?");
+                        $stmt->bind_param("s", $username);
+                        $stmt->execute();
+
+                        $stmt->bind_result($vnaam,$anaam,$email);
+                        $rows = array();
+                        while ($stmt->fetch()) {
+                            $row = array(
+                                'voornaam' => $vnaam,
+                                'achternaam' => $anaam,
+                                'email' => $email
+                            );
+                            $rows[] = $row;
+                        }
+                        $this->userinfo = $rows;
+
+                        //Locaties moeten nog aangepast worden
                         header("Location: ../paginas/krashosting_cms.php");
                     }
                     else if($table === "customer")

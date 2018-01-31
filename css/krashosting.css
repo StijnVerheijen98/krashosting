@@ -23,10 +23,15 @@ body {
     text-align: center;
 }
 .pakket {
-    border: 2px solid black;
-    padding: 8px;
+    border: 1px solid black;
     text-align: center;
     height: 300px;
+}
+.pakkethomekop{
+    text-align: center;
+    background-color: #868e96;
+    height:70px;
+    width:100%;
 }
 .pakketten {
     display: flex;
@@ -100,6 +105,7 @@ body {
     display:flex;
     padding-top:25px;
     padding-bottom:50px;
+    padding-right:50px;
 }
 .overtekst {
     flex-direction: row;
@@ -117,6 +123,4 @@ body {
 .googlemap{
     width:400px;
     height:400px;
-
 }
-
